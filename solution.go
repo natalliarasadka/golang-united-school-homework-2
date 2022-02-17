@@ -22,7 +22,7 @@ func CalcSquare(sideLen float64, sidesNum MyCustomType) float64 {
 	if sideLen >= 0 {
 		switch sidesNum {
 		case SidesTriangle:
-			return sideLen * math.Sqrt(3) / 4
+			return sideLen * math.Sqrt(3) / 4 // missing * sideLen
 		case SidesSquare:
 			return sideLen * sideLen
 		case SidesCircle:
